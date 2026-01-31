@@ -1,0 +1,40 @@
+{
+  "version": "dna-av-1",
+  "seed": 93847501,
+  "family": "flint-dark-01",
+
+  "transport": {
+    "bpm": 70,
+    "beatsPerBar": 4
+  },
+
+  "macro": {
+    "cycleSec": 140,
+    "attack": 0.55,
+    "hold": 0.08,
+    "release": 0.37,
+    "shape": 2.2
+  },
+
+  "controls": {
+    "defaults": { "density": 0.38, "drift": 0.22, "spread": 0.62, "tension": 0.46 }
+  },
+
+  "audio": {
+    "bed":     { "hpHz": [35, 120],  "lpHz": [350, 2400], "gain": [0.004, 0.040] },
+    "drone":   { "rootHz": 43.65,    "gain": [0.010, 0.090], "lpHz": [180, 1500], "q": [0.9, 7.0] },
+    "shimmer": { "bands": 4,         "freqHz": [380, 5200], "q": [4.0, 22.0], "gain": [0.0005, 0.050] },
+    "grains":  { "rate": [0.06, 1.30], "durSec": [0.035, 0.22], "bpHz": [240, 5200], "q": [8, 26], "gain": [0.0006, 0.006] },
+    "space":   { "wet": [0.10, 0.90], "delaySec": [0.14, 0.80], "fb": [0.12, 0.90], "dampHz": [700, 3100] },
+    "master":  { "gain": 0.85, "softClip": 0.92 }
+  },
+
+  "visual": {
+    "bg":    { "hue": [220, 330], "sat": [12, 65], "bri": [2, 14] },
+    "field": { "count": [120, 1400], "alpha": [0.010, 0.040], "size": [1.0, 10.0] },
+    "motion": { "noiseScale": [0.0010, 0.0045], "timeRate": [0.000035, 0.000085] },
+    "halo":  { "on": true, "strength": [0.10, 0.45] }
+  },
+
+  "wsUrl": null
+}
